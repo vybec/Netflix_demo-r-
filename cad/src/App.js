@@ -1,31 +1,19 @@
+import React from "react"
+import NavBar from "./Components/Navbar/NavBar"
+import './App.css'
+import Banner from "./Banner/Banner"
+import Rowpost from './Components/Rowpost/Rowpost'
 
-import Counter from './Counter'
-import { useState }from 'react'
 
-
-function App() {
-
-  const [state,setState]=useState(false)
-
- 
-  return (
-
-    <div className='App'>
-      <h1 onClick={()=>setState(!state)}>Show/Hide</h1>
-     
-      { state ? <Counter/> : null  }   
-
+function App (){
+  return(
+    <div className="App">
+      <NavBar/>
+      <Banner/>
+      <Rowpost/>
+      
+      
     </div>
-
-
-  );
-
- 
+  )
 }
-
 export default App;
-
-
-//MOUNTING
-//UPDATING
-//UNMOUNTING
